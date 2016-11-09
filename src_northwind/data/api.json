@@ -1,0 +1,24 @@
+{
+	"Namespace": "Northwind.Api",
+	"AssemblyGuid": "DDBE3B8A-5011-4F07-B56F-7A3C5F0BCE85",
+	"AssemblyVersion": "1.0.0.0",
+	"AssemblyInformationalVersion": "1.0.0",
+	"SolutionGuid": "B62F3486-7773-474A-94D0-3EE91D91FAE2",
+	"ProjectGuid": "1ED248AC-FC0A-406D-BF7E-5565533E311F",
+	"ProjectReferences": [
+		"System",
+		"System.Core",
+		"System.Data",
+		"System.Data.DataSetExtensions",
+		"System.Net.Http",
+		"System.Xml",
+		"System.Xml.Linq",
+		"Microsoft.CSharp"
+	],
+	"ProjectFiles": [
+		"AssemblyInfo.cs",
+		"Daos.cs",
+		"Services.cs",
+		"ServiceTypes.cs"
+	]
+}

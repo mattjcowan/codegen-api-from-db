@@ -1,0 +1,36 @@
+// ----------------------------------------------------------------------
+// Auto-generated on {{now "u"}} from {{Template.Name}}.hbs
+// Any changes you make to this file will be overwritten.
+// ----------------------------------------------------------------------
+
+using System;
+using {{ api.Namespace }}.Daos;
+using {{ api.Namespace }}.ServiceTypes;
+using ServiceStack;
+using ServiceStack.Text;
+
+namespace {{ api.Namespace }}.Services
+{
+	public class PingService : Service 
+	{ 
+		public object Any(Ping request) 
+		{ 
+			return new PingResponse 
+			{ 
+				ServerTimeUtc = DateTime.UtcNow,
+				ServerTime = DateTime.Now
+			}; 
+		} 
+	} 
+	 
+	[Route("/ping")] 
+	public class Ping: IReturn<PingResponse>
+	{
+	} 
+	 
+	public class PingResponse 
+	{
+		public DateTime ServerTimeUtc { get; set; } 
+		public DateTime ServerTime { get; set; } 
+	}
+}
